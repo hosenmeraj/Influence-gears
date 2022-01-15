@@ -12,7 +12,7 @@ body{
 }
 .logo{
     font-weight: 800;
-    font-size: 30px;
+    width: 245px;
 }
 nav{
    
@@ -39,18 +39,176 @@ section{
     margin-bottom: 100px;
     
 }
-h1{
-    font-size: 50px;
+.banner-title{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    color: transparent;
+    position: relative;
+}
+.banner-title::before{
+    content: 'Start your Journey as Influencer';
+    position: absolute;
+    color:  #3A3A3A;
+    animation: typing 5s linear infinite;
+}
+@keyframes typing{
+    0%{
+        content: 'S|';
+    }
+    2%{
+        content: 'St|';
+    }
+    4%{
+        content: 'Sta|';
+    }
+    6%{
+        content: 'Star|';
+    }
+    8%{
+        content: 'Start|';
+    }
+    10%{
+        content: 'Start |';
+    }
+    12%{
+        content: 'Start y|';
+    }
+    14%{
+        content: 'Start yo|';
+    }
+    16%{
+        content: 'Start you|';
+    }
+    18%{
+        content: 'Start your|';
+    }
+    20%{
+        content: 'Start your |';
+    }
+    22%{
+        content: 'Start your J|';
+    }
+    24%{
+        content: 'Start your Jo|';
+    }
+    26%{
+        content: 'Start your Jou|';
+    }
+    28%{
+        content: 'Start your Jour|';
+    }
+    30%{
+        content: 'Start your Journ|';
+    }
+    32%{
+        content: 'Start your Journe|';
+    }
+    34%{
+        content: 'Start your Journey|';
+    }
+    36%{
+        content: 'Start your Journey |';
+    }
+    38%{
+        content: 'Start your Journey a|';
+    }
+    40%{
+        content: 'Start your Journey as|';
+    }
+    42%{
+        content: 'Start your Journey as |';
+    }
+    44%{
+        content: 'Start your Journey as I|';
+    }
+    46%{
+        content: 'Start your Journey as In|';
+    }
+    48%{
+        content: 'Start your Journey as Inf|';
+    }
+    50%{
+        content: 'Start your Journey as Infl|';
+    }
+    52%{
+        content: 'Start your Journey as Influ|';
+    }
+    54%{
+        content: 'Start your Journey as Influe|';
+    }
+    56%{
+        content: 'Start your Journey as Influen|';
+    }
+    58%{
+        content: 'Start your Journey as Influenc|';
+    }
+    60%{
+        content: 'Start your Journey as Influence|';
+    }
+    64%,
+    85%{
+        content: 'Start your Journey as Influencer|';
+    }
+    86%{
+        content: 'Start your Journey as Influenc|';
+    }
+    87%{
+        content: 'Start your Journey as Influe|';
+    }
+    88%{
+        content: 'Start your Journey as Infl|';
+    }
+    89%{
+        content: 'Start your Journey as In|';
+    }
+    90%{
+        content: 'Start your Journey as |';
+    }
+    91%{
+        content: 'Start your Journey a|';
+    }
+    92%{
+        content: 'Start your Journey|';
+    }
+    93%{
+        content: 'Start your Journ|';
+    }
+    94%{
+        content: 'Start your Jou|';
+    }
+    95%{
+        content: 'Start your J|';
+    }
+    96%{
+        content: 'Start your|';
+    }
+    97%{
+        content: 'Start yo|';
+    }
+    98%{
+        content: 'Start|';
+    }
+    99%{
+        content: 'St|';
+    }
+    100%{
+        content: '|';
+    }
+
 }
 .banner{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .banner-side img{
-    width: 75%;
+    width: 100%;
     margin-left: 30px;
 }
+
+
 .banner-side p{
     font-size: 16px;
     line-height: 24px;
@@ -89,11 +247,13 @@ hr{
 
 /* Product collect */
 .popular-collection{
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 .products{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
     grid-gap: 26px;
     
 }
@@ -115,7 +275,7 @@ hr{
 .product{
     background-color: #FFFFFF;
     padding: 5px;
-    box-shadow: 0 7px 10px 0px rgb(50 51 51 / 10%);
+    box-shadow: 0px 7px 10px 0px rgb(168, 165, 165);
     border-radius: 10px;
     height: 475px;
     width: 319px;
@@ -178,4 +338,47 @@ input{
 }
 .news-letter-form .link-btn{
     margin-left: 12px;
+}
+/* footer */
+footer{
+    text-align: center;
+    background-color: #0A0826;
+    padding: 30px 0;
+    color: white;
+}
+footer h3{
+    color: white;
+    font-size: 20px;
+}
+footer .link{
+    color: white;
+    margin-left: 5px;
+    text-decoration: none;
+}
+footer .link:hover{
+    color: tomato;
+}
+
+
+
+
+/* media query */
+@media only screen and (max-width:600px) {
+    .container{
+        width: 90%;
+    }
+    .banner, .products{
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        
+    }
+   
+}
+@media only screen and (min-width:688px) and (max-width:992px){
+     .products{
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        
+    }
+
 }
