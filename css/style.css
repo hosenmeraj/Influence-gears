@@ -10,8 +10,12 @@ body{
     margin: 0 auto;
     padding: 0 30px;
 }
+.logo{
+    font-weight: 800;
+    font-size: 30px;
+}
 nav{
-    background-color: blueviolet;
+   
     display: flex;
     justify-content: space-between;
     height: 80px;
@@ -39,13 +43,12 @@ h1{
     font-size: 50px;
 }
 .banner{
-    display: flex;
-}
-.banner-side{
-    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    flex-direction: column;
 }
 .banner-side img{
-    width: 65%;
+    width: 75%;
     margin-left: 30px;
 }
 .banner-side p{
@@ -85,25 +88,38 @@ hr{
 }
 
 /* Product collect */
+.popular-collection{
+    margin-bottom: 120px;
+}
 .products{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 30px;
+    grid-gap: 26px;
+    
 }
-h2{
+.products h2{
     font-size: 30px;
     text-align: center;
+}
+.products h3{
+    margin:0;
+    padding: 0;
 }
 .product .product-img img{
     width: 300px;
     height: 256px;
+    
 }
+
 
 .product{
     background-color: #FFFFFF;
     padding: 5px;
     box-shadow: 0 7px 10px 0px rgb(50 51 51 / 10%);
     border-radius: 10px;
+    height: 475px;
+    width: 319px;
+
 }
 .fa-star{
     width: 10px;
@@ -116,8 +132,50 @@ h2{
     color: #AEAEAE
 }
 .ratting {
-    margin-left: 0px;
+    padding-left: 0;
 }
 .ratting span{
     margin-left: 10px;
+}
+ .popular-collection a{
+    text-decoration: none;
+    color: #E02C6D;
+    text-align: right; 
+    
+}
+.popular-collection .see-more{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+/* Subscribe */
+.news-letter{
+    text-align: center;
+    
+}
+.news-letter-heading{
+    color: #476197;
+    font-size: 3rem;
+}
+.news-letter-form{
+    vertical-align: middle;
+    margin-top: 1.3rem;
+}
+input{
+    outline: 0;
+    border-radius: 2rem;
+    padding: 0.9rem 2rem;
+    border: 0;
+    width: 100%;
+    background-color: #d3d3d399;
+}
+    
+.news-letter-form input{
+  max-width: 400px;
+  margin-bottom: 0.5rem;
+}
+.news-letter-form .link-btn{
+    margin-left: 12px;
 }
