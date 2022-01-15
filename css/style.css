@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Spline+Sans:wght@400;500;600&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+nav{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+.navigation{
+    display: flex;
+}
+.navigation li{
+    list-style: none;
+    margin: 10px;
+}
+.navigation li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 15px 0px;
+}
+/* banner section */
+section{
+    margin-bottom: 100px;
+    
+}
+h1{
+    font-size: 50px;
+}
+.banner{
+    display: flex;
+}
+.banner-side{
+    width: 50%;
+}
+.banner-side img{
+    width: 65%;
+    margin-left: 30px;
+}
+.banner-side p{
+    font-size: 16px;
+    line-height: 24px;
+    width: 500px;
+    margin-bottom: 30px;
+}
+
+.link-btn{
+    text-decoration: none;
+    width: 196px;
+    height: 44px;
+    border-radius: 41px;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    color: white;
+}
+.fas{
+    margin-left: 10px;
+}
+
+      /* sponser */
+hr{
+    border: px solid gainsboro;
+}
+.sponser{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+
+}
+.sponser img{
+    width: 84px;
+    height: 25px;
+}
+
+/* Product collect */
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+.product .product-img img{
+    width: 300px;
+    height: 256px;
+}
+
+.product{
+    background-color: #FFFFFF;
+    padding: 5px;
+    box-shadow: 0 7px 10px 0px rgb(50 51 51 / 10%);
+    border-radius: 10px;
+}
+.fa-star{
+    width: 10px;
+    height: 11px;
+}
+.fa-star.filled{
+    color: #FB8200;
+}
+.fa-star.empty{
+    color: #AEAEAE
+}
+.ratting {
+    margin-left: 0px;
+}
+.ratting span{
+    margin-left: 10px;
+}
