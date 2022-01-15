@@ -248,6 +248,7 @@ hr{
 /* Product collect */
 .popular-collection{
     margin-bottom: 100px;
+    margin-top: 100px;
 }
 .products{
     display: grid;
@@ -257,7 +258,7 @@ hr{
     grid-gap: 26px;
     
 }
-.products h2{
+.section-title{
     font-size: 30px;
     text-align: center;
 }
@@ -365,12 +366,18 @@ footer .link:hover{
 /* media query */
 @media only screen and (max-width:600px) {
     .container{
-        width: 90%;
+        width: 100%;
     }
     .banner, .products{
         grid-template-columns: repeat(1,1fr);
         align-items: center;
         
+    }
+    .popular-collection{
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        align-items: center;
+        justify-content: center;
     }
    
 }
